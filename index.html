@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Form</title>
+</head>
+<body>
+    <h1>Apply for a Loan</h1>
+    <form action="/submit_loan_application" method="POST">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="loan_amount">Loan Amount:</label>
+        <input type="number" id="loan_amount" name="loan_amount" required><br><br>
+        
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Submit Application</button>
+    </form>
+    
+    <div id="approval_message" style="display: none;">
+        <h2>Congratulations! Your loan application has been approved.</h2>
+    </div>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('approval_message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

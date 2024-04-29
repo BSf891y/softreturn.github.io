@@ -14,10 +14,6 @@ body {
   align-items: center;
 }
 
-header {
-  background-color: #f1f1f1;  /* Light gray background for header */
-}
-
 .logo {
   flex: 1;  /* Make logo area flexible for responsiveness */
 }
@@ -44,6 +40,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: #333;  /* Dark gray text for navigation links */
+  font-weight: bold;
 }
 
 .user-account {
@@ -53,4 +50,5 @@ nav a {
 
 .user-account a {
   margin-left: 10px;
-  color: #333;  /* Dark
+  color: #333;  /* Dark gray text for user account links */
+  font-weight:

@@ -2,21 +2,20 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;  /* Light gray background */
+  background-color: #fff;  /* White background color */
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  background-color: #fff;  /* White header background */
-  padding: 10px 0;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header {
+  background-color: #f1f1f1;  /* Light gray background for header */
 }
 
 .logo {
@@ -54,93 +53,4 @@ nav a {
 
 .user-account a {
   margin-left: 10px;
-  color: #333;  /* Dark gray text for user account links */
-}
-
-main {
-  padding-bottom: 50px;  /* Add some space at the bottom of the main content */
-}
-
-.hero-section {
-  display: flex;
-  flex-wrap: wrap;  /* Allow elements to wrap on smaller screens */
-}
-
-.hero-image {
-  flex: 1;
-  padding: 20px;
-}
-
-.hero-image img {
-  width: 100%;  /* Make hero image responsive */
-}
-
-.hero-content {
-  flex: 1;
-  padding: 20px;
-  text-align: center;  /* Center hero content on smaller screens */
-}
-
-.hero-content h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #2196F3;  /* Blue heading */
-}
-
-.hero-content p {
-  color: #666;  /* Gray paragraph text */
-}
-
-.button-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.button-container a {
-  padding: 10px 20px;
-  background-color: #2196F3; /* Blue button background */
-  color: #fff;  /* White button text */
-  text-decoration: none;
-  margin-right: 10px;
-  border-radius: 5px;  /* Rounded button corners */
-}
-
-.button-container a:hover {
-  background-color: #1779ba;  /* Darker blue on hover */
-}
-
-footer {
-  background-color: #f1f1f1;
-  padding: 10px 0;
-  text-align: center;
-}
-
-footer p {
-  color: #333;  /* Dark gray text for footer */
-}
-
-/* Media Queries for Responsive Design */
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;  /* Stack elements vertically on small screens */
-    align-items: center;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-  }
-
-  nav {
-    margin-top: 10px;  /* Add some space between logo and navigation on small screens */
-  }
-
-  .hero-section {
-    flex-direction: column;
-  }
-
-  .hero-content {
-    text-align: left;  /* Align hero content left on small screens */
-  }
-}
+  color: #333;  /* Dark

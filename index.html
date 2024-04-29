@@ -34,66 +34,42 @@
 </body>
 </html>
 
-  <div id="login-modal" class="modal">
-    <div class="modal-content">
-      <div class.modal-header">
-        <h2>Login</h2>
-        <span class="close-btn">&times;</span>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <div class="logo">
+        <img src="ecos_logo.png" alt="ECOS logo">
       </div>
-      <div class="modal-body">
-        <form action="#">  <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input type="text" name="username" placeholder="Username">
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="login-toggle">Login</a></p>
+      </div>
+      <div class="form-container hidden" id="login-form">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
           <button type="submit">Login</button>
         </form>
       </div>
+      <span class="close-btn">&times;</span>
     </div>
   </div>
 
-  <div id="signup-modal" class="modal">
-    <div class="modal-content">
-      <div class.modal-header">
-        <h2>Sign Up</h2>
-        <span class="close-btn">&times;</span>
-      </div>
-      <div class="modal-body">
-        <form action="#">  <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <main>
-    </main>
-
-  <script>
-    // Script to open and close modals (replace with actual functionality)
-    var modalBtns = document.querySelectorAll('.login-btn, .signup-btn');
-    var modals = document.querySelectorAll('.modal');
-    var closeBtns = document.querySelectorAll('.close-btn');
-
-    modalBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var modalId = this.getAttribute('href');
-        document.querySelector(modalId).style.display = 'block';
-      });
-    });
-
-    closeBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var modal = this.closest('.modal');
-        modal.style.display = 'none';
-      });
-    });
-
-    window.addEventListener('click', function(e) {
-      if (e.target.className === '
+  <script src="script.js"></script>
+</body>
+</html>

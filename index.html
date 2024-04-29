@@ -2,37 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Application Form</title>
+    <title>ECOS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Apply for a Loan</h1>
-    <form action="/submit_loan_application" method="POST">
-        <label for="full_name">Full Name:</label>
-        <input type="text" id="full_name" name="full_name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="loan_amount">Loan Amount:</label>
-        <input type="number" id="loan_amount" name="loan_amount" required><br><br>
-        
-        <label for="message">Additional Information:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-        
-        <button type="submit">Submit Application</button>
-    </form>
-    
-    <div id="approval_message" style="display: none;">
-        <h2>Congratulations! Your loan application has been approved.</h2>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="dfg.png">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Cloud Mining</a></li>
+          <li><a href="#">Miner Rental</a></li>
+          <li><a href="#">Bitcoin Miners</a></li>
+          <li><a href="#">Used ASICS</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+      </nav>
+      <div class="user-account">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <span class="lang">EN</span>
+      </div>
     </div>
-    
-    <script>
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('approval_message').style.display = 'block';
-        });
-    </script>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero-section">
+        <div class="hero-image">
+          <img src="fgh.jpg">
+        </div>
+        <div class="hero-content">
+          <h1>Simple. Reliable. Effective.</h1>
+          <p>ECOS is a Bitcoin mining ecosystem, which includes various tools that allow you to gain rewards from cryptocurrency assets.</p>
+          <div class="button-container">
+            <a href="#">How does it work?</a>
+            <a href="#">Start now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; ECOS</p>
+    </div>
+  </footer>
 </body>
 </html>
